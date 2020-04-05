@@ -1,0 +1,34 @@
+<div>
+   <h2>Estadística de cerebros por sabor</h2>
+  <div>
+    <div style="display: block">
+      <canvas baseChart
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [plugins]="barChartPlugins"
+        [legend]="barChartLegend"
+        [chartType]="barChartType">
+      </canvas>
+    </div>
+    <button class="btn-primary" mat-button mat-raised-button color="primary" (click)="actualizarPorSabor()">Update</button>
+  </div>
+</div>
+<br />
+
+<div>
+<h2>Estadística de cerebros por usuario</h2>
+  <div>
+    <div style="display: block">
+      <canvas baseChart
+        [datasets]="barChartData2"
+        [labels]="barChartLabels2"
+        [options]="barChartOptions2"
+        [plugins]="barChartPlugins2"
+        [legend]="barChartLegend2"
+        [chartType]="barChartType2">
+      </canvas>
+    </div>
+    <button class="btn-primary" mat-button mat-raised-button color="primary" (click)="actualizarPorUsuario()">Update</button>
+  </div>
+</div>

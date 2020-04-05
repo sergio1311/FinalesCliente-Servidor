@@ -1,0 +1,22 @@
+<div class="" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="" role="document">
+        <div class="">
+            <div class="">
+                <div id="mensajeAlertaGuardarUsuarios"></div>
+                <section class="card-body"><h5 class="card-title">Registro</h5>
+                    <div class="position-relative form-group"><label for="username" class="">Nombre de ususario</label><input [(ngModel)]="username" type="text" name="username" id="username" placeholder="Ej: Pedro" class="form-control form-control-sm"></div>
+                    <div class="position-relative form-group"><label for="password" class="">Contraseña</label><input [(ngModel)]="password" type="password" name="password" id="password" placeholder="Ej: xxxxxx" class="form-control form-control-sm"></div>
+                    <div class="position-relative form-group"><label for="email" class="">Correo electronico</label><input [(ngModel)]="email" type="email" name="email" id="email" placeholder="Ej: correo@correo.com" class="form-control form-control-sm"></div>
+                    <div class="position-relative form-group"><label for="tipo" class="">Tipo</label><select [(ngModel)]="tipo" name="select" id="exampleSelect" class="form-control form-control-sm">
+                        <option disabled="true" selected >- Seleccione -</option>
+                        <option>Usuario</option>
+                        <option>Administrador</option>
+                    </select></div> 
+                </section>      
+            </div>
+            <div class="">
+                <button (click)="guardarUsuario()" type="button" class="btn mr-2 mb-2 btn-primary" >Registrar usuario <i class="fas fa-plus" title="registrar"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
